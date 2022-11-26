@@ -37,5 +37,5 @@ function getPerfil(url) {
 }
 
 if (jwt != null) {
-    getPerfil("https://api-financa.herokuapp.com/api/Usuario");
+    getPerfil("https://financaapi.azurewebsites.net/api/Usuario");
 }

@@ -1,7 +1,7 @@
 class Lancamento {
 
     constructor() {
-        this.url = "https://api-financa.herokuapp.com/api/Lancamento";
+        this.url = "https://financaapi.azurewebsites.net/api/Lancamento";
         this.dados = ""
     }
 
@@ -165,7 +165,7 @@ class Lancamento {
                                 }
                             };
 
-                            xhttp.open("DELETE", "https://api-financa.herokuapp.com/api/Lancamento/" + id + "");
+                            xhttp.open("DELETE", "https://financaapi.azurewebsites.net/api/Lancamento/" + id + "");
 
                             xhttp.setRequestHeader("Authorization", "Bearer " + jwt);
                             xhttp.send();

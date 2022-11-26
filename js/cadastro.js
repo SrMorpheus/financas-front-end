@@ -15,7 +15,7 @@ function cadastra() {
         const xhttp = new XMLHttpRequest();
 
 
-        xhttp.open("POST", "https://api-financa.herokuapp.com/api/Usuario");
+        xhttp.open("POST", "https://financaapi.azurewebsites.net/api/Usuario");
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhttp.send(JSON.stringify({
             "nome": nome,

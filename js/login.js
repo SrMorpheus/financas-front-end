@@ -8,7 +8,7 @@ function login() {
     const password = document.getElementById("password").value;
 
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://api-financa.herokuapp.com/api/Auth/signin");
+    xhttp.open("POST", "https://financaapi.azurewebsites.net/api/Auth/signin");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
         "userName": username,
